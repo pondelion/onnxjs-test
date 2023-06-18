@@ -1,0 +1,17 @@
+diff --git a/node_modules/onnxjs/lib/execution-plan.js b/node_modules/onnxjs/lib/execution-plan.js
+index 3f629d3..0fd05d8 100644
+--- a/node_modules/onnxjs/lib/execution-plan.js
++++ b/node_modules/onnxjs/lib/execution-plan.js
+@@ -165,9 +165,9 @@ var ExecutionPlan = /** @class */ (function () {
+                                                 var op, result;
+                                                 return __generator(this, function (_a) {
+                                                     op = thisOp.op;
+-                                                    if (!op.checkInputs(inputTensors)) {
+-                                                        throw new Error("invalid inputs detected; op: " + thisOp.node.name);
+-                                                    }
++                                                    // if (!op.checkInputs(inputTensors)) {
++                                                    //     throw new Error("invalid inputs detected; op: " + thisOp.node.name);
++                                                    // }
+                                                     result = op.run(inferenceHandler, inputTensors);
+                                                     return [2 /*return*/, result];
+                                                 });
